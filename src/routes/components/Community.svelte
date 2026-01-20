@@ -16,31 +16,20 @@
 	// ];
 </script>
 
-<div id="community" style="--foreground: {$currentTheme.foreground}; --orange: {$currentTheme.orange}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow}; --purple: {$currentTheme.purple};">
+<section id="community" style="--foreground: {$currentTheme.foreground}; --orange: {$currentTheme.orange}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow}; --purple: {$currentTheme.purple};">
 	<h2>&lt;<span>Community</span>&gt;</h2>
-	<!-- <h3 style="margin-top: 0px;">Media</h3> -->
-	<!-- <p>  -->
-	<!-- 	{#each youtubeChannels as channel}<a href={"https://www.youtube.com/@" + channel}>{channel}</a><span class="favorites-delimiter">-</span>{/each}<!-- -->
-	<!-- 	-->
-	<!-- <span><a href="https://lukesmith.xyz/">LukeSmith</a></span> -->
-	<!-- </p> -->
-	<!-- <h3>Favorites</h3> -->
 	<ul>
-		<li><a target="_blank" href="https://lunarflame.dev/">LunarFlame Studios</a> - Independant game dev team responsible for  the endlessly entertaining <a target="_blank" href="https://lunarflame.dev/projects/project-leo">Project Leo</a>. A fantastic game and team.</li>
-		<li><a target="_blank" href="https://squi.bid">Squibid</a> - Personal projects, blogs from the one, the only, Squibid.</li>
-		<li><a target="_blank" href="https://www.onocu.com">_Orange</a> - Three oranges in a trench coat, and great tea connoisseur.</li>
-		<li><a target="_blank" href="https://wideeyed.online/">lafayette°</a> - Electric classmate and <a target="_blank" href="https://www.instagram.com/lafayette.degrees/">graphic design hobbyist</a>.</li>
-		<li><a target="_blank" href="https://andrynasief.github.io/andrynasief/">bomba</a> - Egyptian React dev... nuff said.</li>
+		<li><a target="_blank" href="https://lunarflame.dev/">LunarFlame Studios</a> - Independant game dev team responsible for  the endlessly entertaining <a target="_blank" href="https://lunarflame.dev/projects/project-leo">Project Leo</a></li>
+		<li><a target="_blank" href="https://squi.bid">Squibid</a> - Personal projects, blogs from the one, the only, Squibid</li>
+		<li><a target="_blank" href="https://www.onocu.com">_Orange</a> - Three oranges in a trench coat, and great tea connoisseur</li>
+		<li><a target="_blank" href="https://wideeyed.online/">lafayette°</a> - Electric classmate and <a target="_blank" href="https://www.instagram.com/lafayette.degrees/">graphic design hobbyist</a></li>
+		<li><a target="_blank" href="https://andrynasief.github.io/andrynasief/">bomba</a> - Egyptian React dev... nuff said</li>
 	</ul>
-</div>
+</section>
 
 
 <style>
-	* {
-		font-family: Iosevka, monospace;
-	}
-
-	div {
+	section {
 		color: var(--foreground);
 		margin-inline: 15%;
 	}

@@ -7,10 +7,10 @@
 </script>
 
 <a href={link} target="_blank">
-	<div class="entry">
+	<li class="entry">
 		<h4>{name}</h4>
 		<p>{description}</p>
-	</div>
+	</li>
 </a>
 
 <style>
@@ -24,12 +24,11 @@
 		text-align: left;
 	}
 
-	div {
+	li {
 		display: flex;	
 		flex-direction: column;
 		border: solid var(--foreground) 2px;
-		border-radius: 0.5rem;
-		padding: 0.5rem;
+		padding: 0.75rem;
 		color: var(--foreground);
 	}
 

@@ -2,7 +2,7 @@
     import { currentTheme } from "../themes";
 </script>
 
-<div id="contact" style="--foreground: {$currentTheme.foreground}; --orange: {$currentTheme.orange}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow}; --cyan: {$currentTheme.cyan};">
+<section id="contact" style="--foreground: {$currentTheme.foreground}; --orange: {$currentTheme.orange}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow}; --cyan: {$currentTheme.cyan};">
 	<h2>&lt;<span>Contact</span>&gt;</h2>
 	<ul>
 		<li>Github: <a href="https://github.com/EggbertFluffle/">EggbertFluffle</a></li>
@@ -10,15 +10,10 @@
 		<li>E-Mail (school): hadiambrosio@wpi.edu</li>
 		<li>LinkedIn: <a href="https://www.linkedin.com/in/harrison-diambrosio-505443229/">Harrison DiAmbrosio</a></li>
 	</ul>
-</div>
-
+</section>
 
 <style>
-	* {
-		font-family: Iosevka, monospace;
-	}
-
-	div {
+	section {
 		color: var(--foreground);
 		margin-inline: 15%;
 	}
@@ -51,7 +46,7 @@
 	}
 
 	@media (max-width: 666px) {
-		div {
+		section {
 			margin-inline: 0px;
 		}
 

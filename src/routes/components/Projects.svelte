@@ -4,26 +4,26 @@
 	import { currentTheme } from "../themes.js";
 </script>
 
-<div id="projects" style="--foreground: {$currentTheme.foreground}; --red: {$currentTheme.red}; --green: {$currentTheme.green}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow}; --orange: {$currentTheme.orange};">
+<section id="projects" style="--foreground: {$currentTheme.foreground}; --red: {$currentTheme.red}; --green: {$currentTheme.green}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow}; --orange: {$currentTheme.orange};">
 	<h2>&lt;<span>Projects</span>&gt;</h2>
-	<div class="project-list">
+	<ul class="project-list">
 		<ProjectEntry 
 			name="BeepBoop.nvim" 
 			description="A Neovim plugin intended to make it easy to incorporate audio cues into Neovim. This can be for accessibility reasons, or in my case, just for fun!"
 			link="https://github.com/EggbertFluffle/beepboop.nvim" />
 		<ProjectEntry 
-			name="MPRLab Percussion Robotics" 
-			description="Research led by Professor Scott D. Barton of Worcester Polytechnic Institute to study the effectiveness of voice coil actuators in mimicing and exceeding the capabilities of human drummers."
-			link="https://github.com/MPRlab/VCA_Percussion"/>
-	</div>
-</div>
+			name="Mezzaluna" 
+			description="Mezzaluna is a wayland compositor with the goal of taking care of the hard work, while leaving configuration, tiling behaviour and general exstensability to be limitlessly expressed in easy to write, lovable Lua."
+			link="https://github.com/MezzalunaWM/Mezzaluna" />
+		<!-- <ProjectEntry  -->
+		<!-- 	name="MPRLab Percussion Robotics"  -->
+		<!-- 	description="Research led by Professor Scott D. Barton of Worcester Polytechnic Institute to study the effectiveness of voice coil actuators in mimicing and exceeding the capabilities of human drummers." -->
+		<!-- 	link="https://github.com/MPRlab/VCA_Percussion"/> -->
+	</ul>
+</section>
 
 <style>
-	* {
-		font-family: Iosevka, monospace;
-	}
-
-	#projects{
+	#projects {
 		color: var(--foreground);
 		margin-inline: 15%;
 	}

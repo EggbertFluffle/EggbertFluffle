@@ -6,28 +6,26 @@ import { currentTheme } from "../themes.js";
 
 <ThemePicker /> 
 <main style="--background1: {$currentTheme.background1}; --background2: {$currentTheme.background2}; --foreground: {$currentTheme.foreground}; --red: {$currentTheme.red}; --blue: {$currentTheme.blue}; --yellow: {$currentTheme.yellow}; --purple: {$currentTheme.purple}; --orange: {$currentTheme.orange}; --green: {$currentTheme.green}; --aqua: {$currentTheme.aqua}; --grey: {$currentTheme.grey};">
-	<a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold;">&lt; Back</a>
+	<a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold; font-size: 1.5rem;">&lt; Back</a>
 	<slot></slot>
 </main>
 
 <style>
 	main {
-		padding-inline: 20%;
+		padding-inline: 25%;
 		padding-block: 5%;
 		background-color: var(--background1);
 		min-height: 100vmin;
-		font-size: 1.15rem;
 	}
 
 	main :global(*) {
 		color: var(--foreground);
-		font-family: Iosevka, monospace;
 		margin-block: 1rem;
 	}
 
 	main :global(h1) {
 		color: var(--red);
-		font-size: 3em;
+		font-size: 3rem;
 	}
 
 	main :global(h1)::before {
@@ -37,7 +35,7 @@ import { currentTheme } from "../themes.js";
 
 	main :global(h2) {
 		color: var(--green);
-		font-size: 2.25em;
+		font-size: 2rem;
 	}
 
 	main :global(h2)::before {
@@ -52,7 +50,6 @@ import { currentTheme } from "../themes.js";
 
 	main :global(p) {
 		margin-block: 0.75rem;
-		line-height: 1.5rem;
 	}
 
 	main :global(a) {

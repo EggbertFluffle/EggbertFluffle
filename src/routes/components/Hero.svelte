@@ -19,7 +19,7 @@
 	};
 </script>
 
-<div on:mousemove={mouseMove} role="presentation" class="hero">
+<section on:mousemove={mouseMove} role="presentation" class="hero">
 	<h1 style="--foreground: {$currentTheme.foreground};">
 		{#each firstName as l}
 			<FloatingLetter letter={l} settings={floatingLettersSettings} mouse={mouse} highlighted={vowels.includes(l.toLowerCase())}/>
@@ -30,7 +30,7 @@
 		{/each}
 	</h1>
 	<Nav/>
-</div>
+</section>
 
 <style>
 	.hero {
@@ -38,7 +38,7 @@
 		align-items: center;
 		min-width: 100mvw;
 		min-height: 100vh;
-		font-family: MonaspaceKr, Iosevka, monospace;
+		font-family: MonaspaceKr, monospace;
 	}
 
 	h1 {

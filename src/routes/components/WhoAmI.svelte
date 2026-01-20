@@ -2,23 +2,19 @@
 	import { currentTheme } from "../themes.js";
 </script>
 
-<div id="whoAmI" style="--foreground: {$currentTheme.foreground}; --red: {$currentTheme.red}; --green: {$currentTheme.green}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow}; --orange: {$currentTheme.orange};">
+<section id="whoAmI" style="--foreground: {$currentTheme.foreground}; --red: {$currentTheme.red}; --green: {$currentTheme.green}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow}; --orange: {$currentTheme.orange};">
 	<h2>&lt;<span>WhoAmI</span>&gt;</h2>
 	<p>I am <em>H<span>a</span>rr<span>i</span>s<span>o</span>n D<span>iA</span>mbr<span>o</span>s<span>io</span></em>, a programmer who appreciates the elegance of simple computer systems. As a student at Worcester Polytechnic Institute, my work is infused with the ideals of the UNIX Philosophy, while embracing modern systems technologies to fuel an addiction to constant exploration. <h3>Technologies, Dotfiles, and Software I like</h3>
 	<ul>
-		<li><a target="_blank" href="https://github.com/EggbertFluffle/nvim"><strong>Neovim</strong></a> - Crown jewel of a text editor and the only way I can type now.</li>
+		<li><a target="_blank" href="https://github.com/EggbertFluffle/nvim"><strong>Neovim</strong></a> - Crown jewel of a text editor and the only way I can type now</li>
 		<li><a target="_blank" href="https://voidlinux.org/"><strong>Linux (Void, Debian)</strong></a> - Let's be real, distros they're all the same</li>
-		<li><a target="_blank" href="https://dwm.suckless.org/"><strong>dwm</strong></a> - Aura-farming window manager, and a beautiful piece of software.</li>
-		<li><a target="_blank" href="https://zen-browser.app/"><strong>zen</strong></a> - Dang gum, finding a good web-browser is tough. This one is alright I suppose.</li>
+		<li><a target="_blank" href="https://github.com/MezzalunaWM/Mezzaluna"><strong>Mezzaluna</strong></a> - Bringing an uncontested quiality, GNU/Linux desktop to a ThinkPad near you</li>
+		<li><a target="_blank" href="https://zen-browser.app/"><strong>zen</strong></a> - Dang gum, finding a good web-browser is tough... but this one is alright I suppose</li>
 	</ul>
-</div>
+</section>
 
 <style>
-	* {
-		font-family: Iosevka, monospace;
-	}
-
-	div {
+	section {
 		color: var(--foreground);
 		margin-inline: 15%;
 	}

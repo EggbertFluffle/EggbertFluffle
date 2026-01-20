@@ -10,23 +10,10 @@
     import ThemePicker from "./components/ThemePicker.svelte";
 </script>
 
-<main style="--background1: {$currentTheme.background1};">
-	<ThemePicker />
-	<Hero />
-	<WhoAmI/>
-	<Projects />
-	<Blogs />
-	<Community />
-	<Contact />
-</main>
-
-<style>
-    main {
-	    background-color: var(--background1);
-	    font-family: monospace;
-    }
-
-    main::after {
-	    color: var(--background1);
-    }
-</style>
+<ThemePicker />
+<Hero />
+<WhoAmI/>
+<Projects />
+<Blogs />
+<Community />
+<Contact />

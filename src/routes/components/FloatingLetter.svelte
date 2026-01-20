@@ -4,11 +4,11 @@
 
 	export let letter: string;
 	export let highlighted: boolean;
-	export let settings: {rotationalOffset: number, translationalOffset: number };
+	export let settings: { rotationalOffset: number, translationalOffset: number };
 
 	export let mouse: { x: number, y: number };
 
-	let element: HTMLParagraphElement;
+	let element: HTMLSpanElement;
 
 	const fps: number = 60;
 	const mouseRad: number = 300;
@@ -85,31 +85,17 @@
 	
 </script>
 
-<p bind:this={element} style="--x: {posX}px; --y: {posY}px; --r: {rot}deg; --h: {highlighted ? $currentTheme.red : 'inherit'};">{letter}</p>
+<span bind:this={element} style="--x: {posX}px; --y: {posY}px; --r: {rot}deg; --h: {highlighted ? $currentTheme.red : 'inherit'};">{letter}</span>
 
 <style>
-	p {
+	span {
 		position: relative;
 		font-size: inherit;
+		font-family: MonaspaceKR, monospace;
 		display: inline-block;
 		color: var(--h);
 		left: var(--x);
 		top: var(--y);
 		transform: rotate(var(--r));
-		/* animation: float 2.5s cubic-bezier(0.25, 1, 0.5, 1); */
 	}
-
-	/* @keyframes float { */
-	/* 	from { */
-	/* 		left: var(--x); */
-	/* 		top: var(--y); */
-	/* 		transform: rotate(var(--r)); */
-	/* 	} */
-	/**/
-	/* 	to { */
-	/* 		left: 0px; */
-	/* 		top: 0px; */
-	/* 		transform: rotate(0deg); */
-	/* 	} */
-	/* } */
 </style>
