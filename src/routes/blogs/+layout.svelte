@@ -6,7 +6,6 @@ import { currentTheme } from "../themes.js";
 
 <ThemePicker /> 
 <main style="--background1: {$currentTheme.background1}; --background2: {$currentTheme.background2}; --foreground: {$currentTheme.foreground}; --red: {$currentTheme.red}; --blue: {$currentTheme.blue}; --yellow: {$currentTheme.yellow}; --purple: {$currentTheme.purple}; --orange: {$currentTheme.orange}; --green: {$currentTheme.green}; --aqua: {$currentTheme.aqua}; --grey: {$currentTheme.grey};">
-	<a href="/#blog" style="font-family: monospace; color: var(--foreground); font-weight: bold; font-size: 1.5rem;">&lt; Back</a>
 	<slot></slot>
 </main>
 
@@ -50,6 +49,7 @@ import { currentTheme } from "../themes.js";
 
 	main :global(p) {
 		margin-block: 0.75rem;
+		line-height: calc(inherit + 10px);
 	}
 
 	main :global(a) {
@@ -97,27 +97,32 @@ import { currentTheme } from "../themes.js";
 	}
 
 	@media (max-width: 666px) {
+		main {
+			padding-inline: 5%;
+		}
+
+		main :global(h1) {
+			font-size: 1pt;
+		}
+
+		main :global(h1)::before {
+			display: none;
+		}
+
 		main :global(h2)::before {
 			display: none;
 		}
 
 		main :global(p) {
-			font-size: 1rem;
 			line-height: 1.35rem;
 		}
 
-		main :global(pre) {
-			font-size: 1rem;
-		}
-
 		main :global(ol) {
-			font-size: 1rem;
 			line-height: 1.35rem;
 			margin-inline: 2rem;
 		}
 
 		main :global(ul) {
-			font-size: 1rem;
 			line-height: 1.35rem;
 			margin-inline: 2rem;
 		}

@@ -34,7 +34,6 @@
 
 	p {
 		text-decoration: none;
-		font-size: 1.35rem;
 		text-indent: 3rem;
 		margin-left: 2rem;
 	}
@@ -47,7 +46,6 @@
 		p {
 			margin-top: 1rem;
 			margin-left: 1rem;
-			font-size: 1rem;
 		}
 	}
 </style>

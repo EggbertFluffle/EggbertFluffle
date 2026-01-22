@@ -31,7 +31,6 @@
 
 	ul {
 		margin-inline: 5rem;
-		font-size: 1.5rem;
 		list-style: none;
 	}
 
@@ -57,7 +56,7 @@
 	}
 
 	@media (max-width: 666px) {
-		div {
+		section {
 			margin-inline: 0px;
 		}
 
@@ -68,7 +67,6 @@
 		}
 
 		ul {
-			font-size: 1rem;
 			margin-inline: 2rem;
 		}
 	}
