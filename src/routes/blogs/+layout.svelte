@@ -70,6 +70,7 @@ import { currentTheme } from "../themes.js";
 		text-wrap-mode: nowrap;
 		overflow-x: scroll;
 		max-width: 100lvw;
+		font-size: 1.4rem;
 	}
 
 	main :global(pre) {

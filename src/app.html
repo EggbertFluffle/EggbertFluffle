@@ -14,6 +14,18 @@
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 	<style>
+		@font-face {
+			font-family: "PT Sans";
+			font-style: normal;
+			src: url("/fonts/PTSans-Regular.ttf");
+		}
+
+		@font-face {
+			font-family: "MonaspaceKR";
+			font-style: normal;
+			src: url("/fonts/MonaspiceKrNerdFont-Regular.otf");
+		}
+
 		* {
 			margin: 0px;
 			padding: 0px;
@@ -21,9 +33,9 @@
 		}
 
 		p, li {
-			font-family: "ETBembo";
-			line-height: 1.5;
-			font-size: 18pt;
+			font-family: "PT Sans", "Courier";
+			line-height: 1.25;
+			font-size: 22pt;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
@@ -38,18 +50,6 @@
 			p, li {
 				font-size: 12pt;
 			}
-		}
-
-		@font-face {
-			font-family: 'MonaspaceKR';
-			font-style: normal;
-			src: url('/fonts/MonaspiceKrNerdFont-Regular.otf');
-		}
-
-		@font-face {
-			font-family: 'ETBembo';
-			font-style: normal;
-			src: url('/fonts/et-book-roman-old-style-figure.ttf');
 		}
 	</style>
 </html>
