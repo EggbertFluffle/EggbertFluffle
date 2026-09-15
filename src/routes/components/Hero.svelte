@@ -5,6 +5,7 @@
 
 	let firstName: string = "Harrison";
 	let lastName: string = "DiAmbrosio";
+
 	let vowels: string = "aeiou";
 
 	let mouse = { x: 0, y: 0 };

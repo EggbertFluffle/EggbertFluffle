@@ -274,8 +274,67 @@
 				]]>
 			</description>
 		</item>
+		<item>
+			<guid>https://eggbert.xyz/blogs/a_love_letter_to_lua_tables</guid>
+			<title>A Love Letter to Lua Tables</title>
+			<link>https://eggbert.xyz/blogs/a_love_letter_to_lua_tables</link>
+			<pubDate>Sat, March 21, 2026</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>A Love Letter to Lua Tables</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbert.xyz/blogs/a_love_letter_to_lua_tables">A Love Letter to Lua Tables</a></h1>
+					</body>
+				</html>
+				]]>
+			</description>
+		</item>
+
+		<item>
+			<guid>https://eggbert.xyz/blogs/presentations_in_typst</guid>
+			<title>Presentations in Typst</title>
+			<link>https://eggbert.xyz/blogs/presentations_in_typst</link>
+			<pubDate>Tuesday, April 7th, 2026</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>Presentations in Typst</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbert.xyz/blogs/presentations_in_typst">Presentations in Typst</a></h1>
+					</body>
+				</html>
+					]]>
+			</description>
+		</item>
+		<item>
+			<guid>https://eggbert.xyz/blogs/the_perfect_frame</guid>
+			<title>The Perfect Frame</title>
+			<link>https://eggbert.xyz/blogs/the_perfect_frame</link>
+			<pubDate>Friday, June 10, 2026</pubDate>
+			<description>
+				<![CDATA[
+				<!doctype html>
+				<html>
+					<head>
+						<title>The Perfect Frame</title>
+					</head>
+					<body>
+						<h1><a href="https://eggbert.xyz/blogs/the_perfect_frame">The Perfect Frame</a></h1>
+					</body>
+				</html>
+					]]>
+			</description>
+		</item>
 	</channel>
 </rss>
+
 <!-- <item> -->
 <!-- 	<guid>https://eggbert.xyz/blogs/{PATH_TO_BLOG}</guid> -->
 <!-- 	<title>{TITLE}</title> -->

@@ -6,6 +6,7 @@ import { currentTheme } from "../themes.js";
 
 <ThemePicker /> 
 <main style="--background1: {$currentTheme.background1}; --background2: {$currentTheme.background2}; --foreground: {$currentTheme.foreground}; --red: {$currentTheme.red}; --blue: {$currentTheme.blue}; --yellow: {$currentTheme.yellow}; --purple: {$currentTheme.purple}; --orange: {$currentTheme.orange}; --green: {$currentTheme.green}; --aqua: {$currentTheme.aqua}; --grey: {$currentTheme.grey};">
+	<a href="/#blog">{"<-"} back</a>
 	<slot></slot>
 </main>
 
@@ -65,16 +66,21 @@ import { currentTheme } from "../themes.js";
 		font-family: monospace;
 	}
 
+	main :global(img) {
+		width: 100%;
+	}
+
 	main :global(code) {
 		background: var(--background2);
 		text-wrap-mode: nowrap;
 		overflow-x: scroll;
 		max-width: 100lvw;
-		font-size: 1.4rem;
+		font-size: 0.9em;
 	}
 
 	main :global(pre) {
 		background: var(--background2);
+		font-size: 2em;
 		text-wrap-mode: nowrap;
 		overflow-x: scroll;
 		max-width: 100lvw;
@@ -137,11 +143,6 @@ import { currentTheme } from "../themes.js";
 			font-size: 2rem;
 			text-align: center;
 		}
-	}
-
-
-	main :global(img) {
-		width: 100%;
 	}
 
 	main :global(.kw),

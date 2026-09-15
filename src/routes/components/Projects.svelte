@@ -13,8 +13,16 @@
 			link="https://github.com/EggbertFluffle/beepboop.nvim" />
 		<ProjectEntry 
 			name="Mezzaluna" 
-			description="Mezzaluna is a wayland compositor with the goal of taking care of the hard work, while leaving configuration, tiling behaviour and general exstensability to be limitlessly expressed in easy to write, lovable Lua."
+			description="Mezzaluna is a Wayland compositor with the goal of taking care of the hard work, while leaving configuration, tiling behavior and general exstensability to be limitlessly expressed in easy to write, lovable Lua."
 			link="https://github.com/MezzalunaWM/Mezzaluna" />
+		<ProjectEntry 
+			name="Lunabyte Studios"
+			description="We’re a small team of passionate web designers, looking to bring you a standout web presence. Based out of Worcester MA, two students have made it their mission to make the web beautiful, starting with your online presence. No idea is too alien, just as no ambitions are out of reach."
+			link="https://byte.lunarflame.dev" />
+		<ProjectEntry 
+			name="Conductor" 
+			description="Conductor is a DSL designed to unify how we describe dynamic window management. It is intended to be platform agnostic meaning that, as long as a desktop platform implements and interface to Conductor, one snippet could work in any Wayland compositor just as it would on any X11 window manager."
+			link="https://github.com/EggbertFluffle/Conductor" />
 		<!-- <ProjectEntry  -->
 		<!-- 	name="MPRLab Percussion Robotics"  -->
 		<!-- 	description="Research led by Professor Scott D. Barton of Worcester Polytechnic Institute to study the effectiveness of voice coil actuators in mimicing and exceeding the capabilities of human drummers." -->

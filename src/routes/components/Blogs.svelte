@@ -1,24 +1,104 @@
-<script>
+<script lang="ts">
 	import { currentTheme } from "../themes.js";
+
+	let blogs = [
+		{
+			date: "07/10/2026",
+			raw: "/blogs/the_perfect_frame",
+			name: "The Perfect Frame",
+		},
+		{
+			date: "04/07/2026",
+			raw: "/blogs/presentations_in_typst",
+			name: "Presentations in Typst",
+		},
+		{
+			date: "03/21/2026",
+			raw: "/blogs/a_love_letter_to_lua_tables",
+			name: "A Love Letter to Lua Tables",
+		},
+		{
+			date: "12/26/2025",
+			raw: "/blogs/server_client_architecture",
+			name: "In Praise of the Client Server Architecture"
+		},
+		{
+			date: "11/27/2025",
+			raw: "/blogs/mezzaluna:_the_penultimate_step",
+			name: "Mezzaluna: The Penultimate Step"
+		},
+		{
+			date: "10/14/2025",
+			raw: "/blogs/neovim_configuration_an_empirical_analysis",
+			name: "Neovim Configuration: An Empirical Analysis"
+		},
+		{
+			date: "10/07/2025",
+			raw: "/blogs/oh_zig_my_beloved",
+			name: "Oh Zig me Beloved"
+		},
+		{
+			date: "02/11/2025",
+			raw: "/blogs/hello_is_anyone_there",
+			name: "Hello? Is anyone there?"
+		},
+		{
+			date: "12/19/2024",
+			raw: "/blogs/advent_of_code:_how_its_going",
+			name: "Advent of Code: How its Going"
+		},
+		{
+			date: "11/20/2024",
+			raw: "/blogs/get_ready_for_advent_of_code",
+			name: "Get Ready for Advent of Code"
+		},
+		{
+			date: "09/08/2024",
+			raw: "/blogs/linux_on_a_laptop_pt2",
+			name: "Linux on a Laptop: My Experience (pt.2)"
+		},
+		{
+			date: "06/02/2024",
+			raw: "/blogs/linux_on_a_laptop_pt1",
+			name: "Linux on a Laptop: My Experience (pt.1)"
+		},
+		{
+			date: "05/09/2024",
+			raw: "/blogs/minecraft_clone",
+			name: "Minecraft Clone (maybe pt.1)"
+		},
+		{
+			date: "03/22/2024",
+			raw: "/blogs/neocities",
+			name: "Neocities"
+		},
+		{
+			date: "02/19/2024",
+			raw: "/blogs/wolfenstein_terminal_raycaster",
+			name: "Wolfenstein-style Terminal Raycast Renderer"
+		},
+		{
+			date: "01/14/2024",
+			raw: "/blogs/introduction",
+			name: "Introduction"
+		},
+		{
+			date: "10/14/2023",
+			raw: "/blogs/terminal_based_3d_graphics",
+			name: "Terminal Based 3D Graphics"
+		}
+	];
+
+	let expanded = false;
 </script>
 
 <section id="blog" style="--foreground: {$currentTheme.foreground}; --orange: {$currentTheme.orange}; --background2: {$currentTheme.background2}; --yellow: {$currentTheme.yellow};">
 	<h2>&lt;<span>Blog</span>&gt;</h2>
 	<ul>
-		<li>12/26/2025: <a href="/blogs/server_client_architecture">In Praise of the Client Server Architecture</a></li>
-		<li>11/27/2025: <a href="/blogs/mezzaluna:_the_penultimate_step">Mezzaluna: The Penultimate Step</a></li>
-		<li>10/14/2025: <a href="/blogs/neovim_configuration_an_empirical_analysis">Neovim Configuration: An Empirical Analysis</a></li>
-		<li>10/07/2025: <a href="/blogs/oh_zig_my_beloved">Oh Zig me Beloved</a></li>
-		<li>02/11/2025: <a href="/blogs/hello_is_anyone_there">Hello? Is anyone there?</a></li>
-		<li>12/19/2024: <a href="/blogs/advent_of_code:_how_its_going">Advent of Code: How its Going</a></li>
-		<li>11/20/2024: <a href="/blogs/get_ready_for_advent_of_code">Get Ready for Advent of Code</a></li>
-		<li>09/08/2024: <a href="/blogs/linux_on_a_laptop_pt2">Linux on a Laptop: My Experience (pt.2)</a></li>
-		<li>06/02/2024: <a href="/blogs/linux_on_a_laptop_pt1">Linux on a Laptop: My Experience (pt.1)</a></li>
-		<li>05/09/2024: <a href="/blogs/minecraft_clone">Minecraft Clone (maybe pt.1)</a></li>
-		<li>03/22/2024: <a href="/blogs/neocities">Neocities</a></li>
-		<li>02/19/2024: <a href="/blogs/wolfenstein_terminal_raycaster">Wolfenstein-style Terminal Raycast Renderer</a></li>
-		<li>01/14/2024: <a href="/blogs/introduction">Introduction</a></li>
-		<li>10/14/2023: <a href="/blogs/terminal_based_3d_graphics">Terminal Based 3D Graphics</a></li>
+		{#each blogs.slice(0, expanded ? blogs.length : 7) as blog (blog.raw)}
+			<li>{blog.date}: <a href={blog.raw}>{blog.name}</a></li>
+		{/each}
+		<a on:click={() => { expanded = !expanded }}>{expanded ? "See less" : "See more"}</a>
 	</ul>
 </section>
 
@@ -32,6 +112,16 @@
 	ul {
 		margin-inline: 5rem;
 		list-style: none;
+		
+	}
+
+	ul > a {
+		cursor: pointer;
+		font-size: 1.25rem;
+	}
+
+	ul > a:hover {
+		text-decoration: underline;
 	}
 
 	li {

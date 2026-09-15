@@ -124,5 +124,4 @@ Some simple terrain generation using basic perlin noise.
 Differnt textured blocks can be rendered with each other. A sea of pink wool with some islands made of wood.
 ![](/images/minecraft_clone_mixed_pink_sea.png)
 Blocks are culled everywhere a player shouldn't be able to see, in between two blocks, from the void of the world.
-![
-](/images/minecraft_clone_proof_of_culling.png)
+![](/images/minecraft_clone_proof_of_culling.png)
